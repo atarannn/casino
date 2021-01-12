@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Permanent Marker', cursive!important;
+	user-select: none;
+}
+
+body {
+	background: url("../images/background.jpeg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 3vw;
+	color: #ffff00;
+
+	padding: 1vh 0vh 2vh 0vh;
+
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+#container {
+	position: absolute;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 75vw;
+	height: 30vw;
+
+	background: linear-gradient(to bottom, rgba(200, 0, 200, .5) 0%, rgba(200, 0, 200, 1) 50%, rgba(200, 0, 200, .5) 100%);
+	border-radius: 25px;
+	/*background-color: red;*/
+}
+
+#frames {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+
+	width: 100%;
+	height: 40%;
+}
+
+#frames div {
+	float: left;
+
+	width: 20%;
+	height: 100%;
+
+	border-left: 4px solid #848484;
+    border-bottom: 4px solid #d8d8d8;
+    border-right: 4px solid #d8d8d8;
+    border-top: 4px solid #848484;
+
+    border-radius: 2px;
+}
+
+.section {
+	float: left;
+
+	width: 20%;
+	height: 100%;
+
+	overflow: hidden;
+
+	/*background-color: green;*/
+}
+
+.item {
+	width: 100%;
+	height: 40%;
+
+	/*background-image: url('../images/poker.png');*/
+	background-repeat: no-repeat;
+	background-position: center;
+
+	/*background-color: yellow;*/
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: auto;
+
+	padding: 2vh 0vh 2vh 0vh;
+
+	display: flex;
+	align-items: center;
+
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+footer div {
+	/*background-color: red;*/
+
+	float: left;
+
+	width: 50%;
+	height: inherit;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	font-size: 2vw;
+
+}
+
+#balance {
+	color: white;
+}
+
+footer div button {
+	font-size: 2vw;
+}
+
+footer div button:active, 
+footer div button:focus {
+	outline: none;
+}
+
+#start {
+	color: #013300;
+	border-color: #015000;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 180px;
+    background-color:#01af00;
+}
+
+#add100pts {
+	color: #463700;
+    border-color: #7a5f00;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 180px;
+    background-color: #d2aa00;
+}
+
